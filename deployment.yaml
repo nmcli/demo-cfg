@@ -20,7 +20,7 @@ spec:
           claimName: httpd-pvc
       containers:
         - name: container
-          image: default-route-openshift-image-registry.apps.ext2.mtp.local/demo/httpd-24:2025-02-19-09-32-33
+          image: default-route-openshift-image-registry.apps.ext2.mtp.local/demo/httpd-24:2025-02-19-09-40-41
           ports:
             - containerPort: 8080
               protocol: TCP
