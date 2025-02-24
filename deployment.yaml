@@ -24,13 +24,6 @@ spec:
           ports:
             - containerPort: 8080
               protocol: TCP
-          env:
-            - name: HTTPD_SSL
-              value: "off"
-          args:
-            - "/bin/sh"
-            - "-c"
-            - "rm -f /etc/httpd/conf.d/ssl.conf && httpd -DFOREGROUND"
           volumeMounts:
           - name: httpd-volume
             mountPath: /var/www/html/
