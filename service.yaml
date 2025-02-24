@@ -10,6 +10,6 @@ spec:
     protocol: TCP
     targetPort: 8080
   selector:
-    app: httpd-deploy
+    app: httpd-app
 status:
   loadBalancer: {}
