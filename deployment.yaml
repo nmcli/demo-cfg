@@ -28,7 +28,8 @@ spec:
           - name: httpd-volume
             mountPath: /var/www/html/
           env: []
-      imagePullSecrets: []
+      imagePullSecrets:
+      - name: image-pull-secret
   strategy:
     type: RollingUpdate
     rollingUpdate:
