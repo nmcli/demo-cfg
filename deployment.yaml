@@ -27,7 +27,13 @@ spec:
           volumeMounts:
           - name: httpd-volume
             mountPath: /var/www/html/
-          env: []
+          env:
+            - name: HTTPD_SSL
+              value: "off"
+          args:
+            - "/bin/sh"
+            - "-c"
+            - "rm -f /etc/httpd/conf.d/ssl.conf && httpd -DFOREGROUND"
       imagePullSecrets:
       - name: image-pull-secret
   strategy:
