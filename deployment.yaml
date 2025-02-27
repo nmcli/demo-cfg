@@ -34,7 +34,7 @@ spec:
             - "/bin/sh"
             - "-c"
             - "rm -f /etc/httpd/conf.d/ssl.conf && httpd -DFOREGROUND"
-      imagePullSecrets: {}
+      imagePullSecrets: []
   strategy:
     type: RollingUpdate
     rollingUpdate:
